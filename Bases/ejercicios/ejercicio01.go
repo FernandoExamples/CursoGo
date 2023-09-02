@@ -4,7 +4,7 @@ import (
 	"strconv"
 )
 
-func Ejecrcicio1(value string) (int, string) {
+func Ejercicio1(value string) (int, string) {
 
 	numero, _ := strconv.Atoi(value)
 

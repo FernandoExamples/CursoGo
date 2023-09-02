@@ -75,7 +75,7 @@ func Bases() {
 	}
 
 	fmt.Println("----------------------- Ejercicio 1 -----------------------")
-	numero, texto := ejercicios.Ejecrcicio1("101")
+	numero, texto := ejercicios.Ejercicio1("101")
 	fmt.Println(numero, texto)
 }
 
@@ -85,5 +85,6 @@ func Teclado() {
 
 func main() {
 	// Bases()
-	Teclado()
+	// Teclado()
+	ejercicios.Ejercicio2()
 }
