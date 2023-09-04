@@ -2,9 +2,9 @@ package main
 
 import (
 	"Bases/ejercicios"
-	"Bases/gorutines"
 	"Bases/teclado"
 	"Bases/variables"
+	"Bases/webserver"
 	"fmt"
 	"runtime"
 )
@@ -109,11 +109,14 @@ func main() {
 	// defer_ejemplo.ShowDefer()
 	// defer_ejemplo.EjemploPanic()
 
-	canal1 := make(chan bool)
+	// canal1 := make(chan bool)
 
-	go gorutines.MiNombreLento("Pedro", canal1)
+	// go gorutines.MiNombreLento("Pedro", canal1)
 
-	fmt.Println("Estoy aqui")
+	// fmt.Println("Estoy aqui")
 
-	<-canal1
+	// <-canal1
+
+	// webserver.MiWebServer()
+	webserver.Middleware()
 }
