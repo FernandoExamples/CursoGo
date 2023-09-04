@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Bases/defer_ejemplo"
 	"Bases/ejercicios"
+	"Bases/gorutines"
 	"Bases/teclado"
 	"Bases/variables"
 	"fmt"
@@ -107,6 +107,13 @@ func main() {
 	// ejercicios.Interfaces(maria)
 
 	// defer_ejemplo.ShowDefer()
-	defer_ejemplo.EjemploPanic()
+	// defer_ejemplo.EjemploPanic()
 
+	canal1 := make(chan bool)
+
+	go gorutines.MiNombreLento("Pedro", canal1)
+
+	fmt.Println("Estoy aqui")
+
+	<-canal1
 }
