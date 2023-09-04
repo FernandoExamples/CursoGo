@@ -2,6 +2,7 @@ package main
 
 import (
 	"Bases/ejercicios"
+	"Bases/files"
 	"Bases/teclado"
 	"Bases/variables"
 	"fmt"
@@ -86,5 +87,8 @@ func Teclado() {
 func main() {
 	// Bases()
 	// Teclado()
-	ejercicios.Ejercicio2()
+	// println(ejercicios.Ejercicio2())
+	// files.GuardarTabla()
+	// files.SumarTabla()
+	files.LeerArchivo()
 }
