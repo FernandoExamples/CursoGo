@@ -2,7 +2,7 @@ package main
 
 import (
 	"Bases/ejercicios"
-	"Bases/mapas"
+	"Bases/modelos"
 	"Bases/teclado"
 	"Bases/variables"
 	"fmt"
@@ -97,5 +97,12 @@ func main() {
 	// arreglos.MostrarArreglos()
 	// arreglos.MostrarSlices()
 	// arreglos.Capacidad()
-	mapas.MostrarMapas()
+	// mapas.MostrarMapas()
+	// users.AltaUsuario()
+
+	pedro := new(modelos.Hombre)
+	maria := new(modelos.Mujer)
+
+	ejercicios.Interfaces(pedro)
+	ejercicios.Interfaces(maria)
 }
