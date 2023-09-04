@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Bases/arreglos"
 	"Bases/ejercicios"
+	"Bases/mapas"
 	"Bases/teclado"
 	"Bases/variables"
 	"fmt"
@@ -96,5 +96,6 @@ func main() {
 	// println(funciones.Fibonacci(10))
 	// arreglos.MostrarArreglos()
 	// arreglos.MostrarSlices()
-	arreglos.Capacidad()
+	// arreglos.Capacidad()
+	mapas.MostrarMapas()
 }
