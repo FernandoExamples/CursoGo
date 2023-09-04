@@ -2,7 +2,7 @@ package main
 
 import (
 	"Bases/ejercicios"
-	"Bases/files"
+	"Bases/funciones"
 	"Bases/teclado"
 	"Bases/variables"
 	"fmt"
@@ -90,5 +90,8 @@ func main() {
 	// println(ejercicios.Ejercicio2())
 	// files.GuardarTabla()
 	// files.SumarTabla()
-	files.LeerArchivo()
+	// files.LeerArchivo()
+	// funciones.Calculo()
+	// funciones.LlamarClosure()
+	println(funciones.Fibonacci(10))
 }
