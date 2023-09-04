@@ -1,8 +1,8 @@
 package main
 
 import (
+	"Bases/defer_ejemplo"
 	"Bases/ejercicios"
-	"Bases/modelos"
 	"Bases/teclado"
 	"Bases/variables"
 	"fmt"
@@ -100,9 +100,13 @@ func main() {
 	// mapas.MostrarMapas()
 	// users.AltaUsuario()
 
-	pedro := new(modelos.Hombre)
-	maria := new(modelos.Mujer)
+	// pedro := new(modelos.Hombre)
+	// maria := new(modelos.Mujer)
 
-	ejercicios.Interfaces(pedro)
-	ejercicios.Interfaces(maria)
+	// ejercicios.Interfaces(pedro)
+	// ejercicios.Interfaces(maria)
+
+	// defer_ejemplo.ShowDefer()
+	defer_ejemplo.EjemploPanic()
+
 }
