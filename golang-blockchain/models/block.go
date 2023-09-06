@@ -1,18 +1,21 @@
 package models
 
 import (
-	"bytes"
-	"crypto/sha256"
+	"math/big"
 )
 
 type Block struct {
 	Hash     []byte
 	Data     []byte
 	PrevHash []byte
+	Nonce    int
 }
 
-func (b *Block) DeriveHash() {
-	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
-	hash := sha256.Sum256(info)
-	b.Hash = hash[:]
+func NewProof(b *Block) *ProofOfWork {
+	target := big.NewInt(1)
+	target.Lsh(target, uint(256-Difficulty))
+
+	pow := &ProofOfWork{b, target}
+
+	return pow
 }
