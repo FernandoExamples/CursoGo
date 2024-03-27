@@ -1,8 +1,15 @@
 package models
 
 type User struct {
-	FirstName string `json:"first_name"`
-	LastName  string `json:"last_name"`
-	Email     string `json:"email" gorm:"unique;not null"`
-	Tasks     []Task `json:"tasks"`
+	Id       string `json:"id"`
+	Name     string `json:"name"`
+	IsActive bool   `json:"is_active"`
+}
+
+var Users = []User{
+	{Id: "1", Name: "John Doe", IsActive: true},
+	{Id: "2", Name: "Jane Doe", IsActive: false},
+	{Id: "3", Name: "John Smith", IsActive: true},
+	{Id: "4", Name: "Jane Smith", IsActive: false},
+	{Id: "5", Name: "John Brown", IsActive: true},
 }

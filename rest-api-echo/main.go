@@ -1,19 +1,16 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
-
-func handleIndex(c echo.Context) error {
-	return c.JSON(http.StatusOK, map[string]string{"message": "Hello, World!"})
-}
 
 func main() {
 	e := echo.New()
 
-	e.GET("/", handleIndex)
+	e.Use(middleware.Logger())
 
-	e.Logger.Fatal(e.Start(":3000"))
+	RegisterRoutes(e)
+
+	e.Start(":3000")
 }
