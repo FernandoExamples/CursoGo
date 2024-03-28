@@ -142,3 +142,4 @@ fabric.properties
 txt/*
 *.txt
 tmp
+*_templ.go
