@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npx tailwindcss -i css/main.css -o static/bundle.css --minify --watch\" \"air\""
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.12",
+    "concurrently": "^8.2.2",
     "tailwind": "^4.0.0"
   }
 }
