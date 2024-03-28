@@ -12,7 +12,7 @@ func main() {
 	e := echo.New()
 	e.Static("/static", "static")
 	e.GET("/", func(c echo.Context) error {
-		return utils.Render(c, http.StatusOK, templates.Hello("World"))
+		return utils.Render(c, http.StatusOK, templates.Layout())
 	})
 	e.Logger.Fatal(e.Start(":3000"))
 }

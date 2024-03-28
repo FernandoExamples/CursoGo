@@ -1,6 +1,8 @@
+@import "../templates/components/p/p.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @font-face {
   font-family: Quicksand;

@@ -1,15 +1,18 @@
 package templates
 
-templ Hello(name string) {
+import "cursogo/templates/components/hello"
+
+templ Layout() {
 	<html lang="en">
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<link rel="stylesheet" href="/static/bundle.css"/>
-			<title>Document</title>
+			<title>Curso Go</title>
 		</head>
 		<body>
-			<div class="text-2xl">Hello { name }</div>
+			@hello.Hello("Mundo")
+			<p class="p">This is a P with the css styles approach</p>
 		</body>
 	</html>
 }

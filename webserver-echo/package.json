@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "concurrently \"npx tailwindcss -i css/main.css -o static/bundle.css --minify --watch\" \"air\""
+    "dev": "concurrently \"npx tailwindcss -i css/main.css -o static/bundle.css --watch\" \"air\""
   },
   "keywords": [],
   "author": "",

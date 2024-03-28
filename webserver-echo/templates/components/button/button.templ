@@ -1,0 +1,13 @@
+package button
+
+templ Button() {
+	<button>
+		{ children... }
+	</button>
+}
+
+templ AnotherButton(child templ.Component) {
+	<button>
+		@child
+	</button>
+}

@@ -1,0 +1,14 @@
+package hello
+
+import (
+	"cursogo/templates/components/button"
+	"cursogo/templates/components/p"
+)
+
+templ Hello(name string) {
+	<div class="text-2xl">Hello { name }</div>
+	@button.Button() {
+		Hola
+	}
+	@p.P(p.PProps{Label: "Parrafo", Variant: p.Header})
+}
