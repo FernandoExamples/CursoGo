@@ -1,0 +1,21 @@
+package templates
+
+type TodoCardProps struct {
+	Id   string
+	Text string
+}
+
+templ TodoCard(props TodoCardProps) {
+	<div class="p-6 w-full bg-white rounded-xl">
+		<div class="border flex gap-4 items-center justify-between border-gray-400 w-full p-3 rounded-lg relative">
+			<div class="flex gap-4">
+				<p class="absolute -top-1 -left-1 rounded-full bg-red-600 text-white text-sm h-4 w-4 flex justify-center items-center">{props.Id}</p>
+				<p>{ props.Text }</p>
+			</div>
+			<div>
+				<button class="text-gray-400"><i class="fa fa-pen mr-2 text-gray-500 hover:text-gray-800"></i></button>
+				<button><i class="fa fa-trash text-gray-500 hover:text-gray-800"></i></button>
+			</div>
+		</div>
+	</div>
+}
